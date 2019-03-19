@@ -3,6 +3,8 @@
 namespace Railken\Amethyst\Models;
 
 use Illuminate\Database\Eloquent\Model;
+use Illuminate\Database\Eloquent\Relations\MorphTo;
+use Illuminate\Database\Eloquent\Relations\BelongsTo;
 use Illuminate\Database\Eloquent\SoftDeletes;
 use Railken\Amethyst\Common\ConfigurableModel;
 use Railken\Lem\Contracts\EntityContract;
@@ -25,7 +27,7 @@ class GeolocationPoint extends Model implements EntityContract
     /**
      * Get all of the owning project models.
      */
-    public function localizable()
+    public function localizable(): MorphTo
     {
         return $this->morphTo();
     }
