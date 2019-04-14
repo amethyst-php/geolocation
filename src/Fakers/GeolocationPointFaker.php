@@ -18,7 +18,7 @@ class GeolocationPointFaker extends Faker
         $bag = new Bag();
         $bag->set('latitude', $faker->latitude);
         $bag->set('longitude', $faker->longitude);
-        $bag->set('localizable_type', \Railken\Amethyst\Models\Foo::class);
+        $bag->set('localizable_type', 'foo');
         $bag->set('localizable', FooFaker::make()->parameters()->toArray());
 
         return $bag;

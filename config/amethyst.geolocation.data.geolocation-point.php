@@ -13,9 +13,7 @@ return [
     'manager'    => Railken\Amethyst\Managers\GeolocationPointManager::class,
     'attributes' => [
         'localizable' => [
-            'options' => [
-                Railken\Amethyst\Models\Foo::class => Railken\Amethyst\Managers\FooManager::class,
-            ],
+            'options' => [],
         ],
     ],
 ];
