@@ -18,6 +18,7 @@ class CreateGeolocationPointsTable extends Migration
             $table->float('longitude');
             $table->string('localizable_type')->nullable();
             $table->integer('localizable_id')->unsigned()->nullable();
+            $table->index(['localizable_type', 'localizable_id']);
             $table->timestamps();
             $table->softDeletes();
         });
