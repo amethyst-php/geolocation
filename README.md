@@ -1,8 +1,8 @@
 # amethyst-geolocation
 
-[![Build Status](https://travis-ci.org/railken/amethyst-geolocation.svg?branch=master)](https://travis-ci.org/railken/amethyst-geolocation)
+[![Build Status](https://travis-ci.org/amethyst-php/geolocation.svg?branch=master)](https://travis-ci.org/amethyst-php/geolocation)
 
-[Amethyst](https://github.com/railken/amethyst) package.
+[Amethyst](https://github.com/amethyst-php/amethyst) package.
 
 # Requirements
 
@@ -13,7 +13,7 @@ PHP 7.1 and later.
 You can install it via [Composer](https://getcomposer.org/) by typing the following command:
 
 ```bash
-composer require railken/amethyst-geolocation
+composer require amethyst/geolocation
 ```
 
 The package will automatically register itself.
