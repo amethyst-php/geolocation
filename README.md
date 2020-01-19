@@ -1,6 +1,6 @@
 # amethyst-geolocation
 
-[![Build Status](https://travis-ci.org/amethyst-php/geolocation.svg?branch=master)](https://travis-ci.org/amethyst-php/geolocation)
+[![Action Status](https://github.com/amethyst-php/geolocation/workflows/test/badge.svg)](https://github.com/amethyst-php/geolocation/actions)
 
 [Amethyst](https://github.com/amethyst-php/amethyst) package.
 
