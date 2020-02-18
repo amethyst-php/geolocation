@@ -20,11 +20,11 @@ class GeolocationPointSchema extends Schema
                 ->setRequired(true),
             Attributes\NumberAttribute::make('longitude')
                 ->setRequired(true),
-            Attributes\EnumAttribute::make('localizable_type', app('amethyst')->getMorphListable('geolocation-point', 'localizable')),
+            Attributes\EnumAttribute::make('localizable_type', app('amethyst')->getDataNames()),
             Attributes\MorphToAttribute::make('localizable_id')
                 ->setRelationKey('localizable_type')
                 ->setRelationName('localizable')
-                ->setRelations(app('amethyst')->getMorphRelationable('geolocation-point', 'localizable')),
+                ->setRelations(app('amethyst')->getDataManagers()),
             Attributes\CreatedAtAttribute::make(),
             Attributes\UpdatedAtAttribute::make(),
             Attributes\DeletedAtAttribute::make(),
